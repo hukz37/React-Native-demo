@@ -51,6 +51,13 @@
 
 // AppRegistry.registerComponent('app', () => app);
 
+
+
+
+
+
+/* 携程的页面     九宫格实现*/
+/*
 var React = require('react-native');
 var {
 	AppRegistry,
@@ -135,14 +142,39 @@ var styles = StyleSheet.create({
 
 AppRegistry.registerComponent("app",() => app);
 
+*/
 
 
 
+/*网易新闻列表展示*/
 
+var React = require('react-native');
+var Header = require('./header');
 
+var {
+	AppRegistry,
+	StyleSheet,
+	View,
+	Text
+} = React;
 
+var app = React.createClass({
+	render: function(){
+		return (
+			<View style={styles.flex}>
+				<Header></Header>
+			</View>
+			);
+	}
+});
 
+var styles = StyleSheet.create({
+	flex:{
+		flex: 1
+	}
+});
 
+AppRegistry.registerComponent('app', () => app);
 
 
 
