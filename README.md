@@ -9,11 +9,11 @@ github地址:https://github.com/facebook/react-native
 学习RN
 
 ###1.简单的九宫格(比普通的九宫格稍微复杂一些)
-![九宫格](/Users/hukezhu/Desktop/Simulator Screen Shot 2016年3月21日 下午5.21.14.png)
+![九宫格](https://box.worktile.com/view/71758690a2c648efb1da73dea5b24171?pid=39f1a5e31a40410cbd72fafeae831bf6&token=5f46b8d2b9604b0a93e32ceeda3d8a75&dt=)
 
 
 
 ###2.网易新闻
 这个有一些问题,目前还没找到原因,我修改了flexDirection之后没有居中显示
-![](/Users/hukezhu/Desktop/Simulator Screen Shot 2016年3月21日 下午5.21.41.png)
+![](https://box.worktile.com/view/7906af51dbb8419fb905c739e8b6e941?pid=39f1a5e31a40410cbd72fafeae831bf6&token=5f46b8d2b9604b0a93e32ceeda3d8a75&dt=)
 
