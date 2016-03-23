@@ -1,4 +1,4 @@
-// /**
+  // /**
 //  * Sample React Native App
 //  * https://github.com/facebook/react-native
 //  */
@@ -299,7 +299,7 @@ var {
  	render: function(){
  		return (
  			<View style={styles.flex}>
- 				<View style={styles.flexDirection,styles.inputHeight}>
+ 				<View style={[styles.flexDirection,styles.inputHeight]}>
  					<View style={styles.flex}>
  						<TextInput style={styles.input} returnKeyType="search" placeholder="请输入关键字" 
  							onEndEditing={this.hide.bind(this,this.state.value)} value={this.state.value} onChangeText={this.getValue}/>
