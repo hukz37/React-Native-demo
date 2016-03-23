@@ -262,6 +262,7 @@ AppRegistry.registerComponent('app', () => app);
 
 
 //3.4章    搜索框
+/*
 var React = require('react-native');
 var {
 	AppRegistry,
@@ -384,6 +385,7 @@ var styles = StyleSheet.create({
 
 AppRegistry.registerComponent("app",() => app);
 
+*/
 
 
 
@@ -393,6 +395,115 @@ AppRegistry.registerComponent("app",() => app);
 
 
 
+
+var React = require('react-native');
+var {
+	AppRegistry,
+	StyleSheet,
+	Text,
+	View,
+	Image,
+	TouchableOpacity
+} = React;
+var imgs = [
+	'http://vczero.github.io/ctrip/hua2.png',
+	'http://vczero.github.io/ctrip/nian2.png',
+	'https://box.worktile.com/view/9dce0c6d741b4ecfa1f775fd05fc45b6?pid=39f1a5e31a40410cbd72fafeae831bf6&token=8527f2406f0e47c09271626246d7d9aa&dt='
+];
+
+var MyImage = React.createClass({
+	getInitialState: function(){
+		var imgs = this.props.imgs;
+		return {
+			imgs: imgs,
+			count: 0
+		};
+	},
+	goNext: function(){
+		var count = this.state.count;
+		count++;
+		if (count < imgs.length) {
+			this.setState({
+				count: count
+			});
+		};
+	},
+	goPreview: function(){
+		var count = this.state.count;
+		count--;
+		if (count >= 0) {
+			this.setState({
+				count: count
+			});
+		};
+	},
+	render: function(){
+		return(
+			<View style={styles.flex}>
+				<View style={styles.Image}>
+					<Image style={styles.img} source={{uri: this.state.imgs[this.state.count]}} resizeMode="contain"/>
+				</View>
+				<View style={styles.btns}>
+					<TouchableOpacity onPress={this.goPreview}>
+						<View style={styles.btn}>
+							<Text>上一张</Text>
+						</View>
+					</TouchableOpacity>
+					<TouchableOpacity onPress={this.goNext}>
+					<View style={styles.btn}>
+						<Text>下一张</Text>
+					</View>
+				</TouchableOpacity>
+				</View>
+			</View>
+			);
+	}
+});
+
+var app = React.createClass({
+	render: function(){
+		return(
+			<View style={[styles.flex,{marginTop:40}]}>
+				<MyImage imgs={imgs}></MyImage>
+			</View>
+			);
+	}
+});
+
+var styles = StyleSheet.create({
+	flex: {
+		flex: 1,
+		alignItems: 'center'
+	},
+	Image: {
+		borderWidth: 1,
+		width: 300,
+		height: 200,
+		borderRadius: 5,
+		borderColor: '#ccc'
+	},
+	img: {
+		height: 200,
+		width: 300
+	},
+	btns: {
+		flexDirection: 'row',
+		justifyContent: 'center',
+		marginTop: 20
+	},
+	btn: {
+		width: 60,
+		height: 30,
+		borderColor: '#0089FF',
+		borderWidth: 1,
+		justifyContent: 'center',
+		alignItems: 'center',
+		borderRadius: 3,
+		marginRight: 20
+	},
+});
+
+AppRegistry.registerComponent('app', ()=> app);
 
 
 
