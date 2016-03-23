@@ -252,12 +252,7 @@ var styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('app', () => app);
-
-
-
 */
-
-
 
 
 
@@ -310,10 +305,10 @@ var {
  				</View>
  				{this.state.show ?
  					<View style={[styles.result]}>
- 						<Text onPress={this.hide.bind(this,this.state.value + '庄')} style={styles.item} numberOfLines={1}>{this.state.value}庄</Text>
+ 						<Text onPress={this.hide.bind(this,'北京'+this.state.value + '市')} style={styles.item} numberOfLines={1}>北京{this.state.value}市</Text>
  						<Text onPress={this.hide.bind(this,this.state.value + '园街')} style={styles.item} numberOfLines={1}>{this.state.value}园街</Text>
  						<Text onPress={this.hide.bind(this,80+this.state.value + '综合商店')} style={styles.item} numberOfLines={1}>80{this.state.value}综合商店</Text>
- 						<Text onPress={this.hide.bind(this,this.state.value + '桃')} style={styles.item} numberOfLines={1}>{this.state.value}桃</Text>
+ 						<Text onPress={this.hide.bind(this,this.state.value + '区')} style={styles.item} numberOfLines={1}>{this.state.value}区</Text>
  						<Text onPress={this.hide.bind(this,'杨林'+this.state.value + '园')} style={styles.item} numberOfLines={1}>杨林{this.state.value}</Text>
  					</View>
  					:null
@@ -388,8 +383,6 @@ var styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent("app",() => app);
-
-
 
 
 

@@ -22,3 +22,8 @@ github地址:https://github.com/facebook/react-native
 
 ![](https://box.worktile.com/view/ecced1823fef469b9005ff6306cfeac7?pid=39f1a5e31a40410cbd72fafeae831bf6&token=5f46b8d2b9604b0a93e32ceeda3d8a75&dt=)
 
+
+
+###3.TextInput组件
+关一个搜索框,使用的假本地数据
+![搜索框](https://box.worktile.com/view/9dce0c6d741b4ecfa1f775fd05fc45b6?pid=39f1a5e31a40410cbd72fafeae831bf6&token=8527f2406f0e47c09271626246d7d9aa&dt=)
