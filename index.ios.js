@@ -520,5 +520,3 @@ AppRegistry.registerComponent('app', ()=> app);
 
 
 
-
-
