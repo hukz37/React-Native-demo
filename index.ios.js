@@ -881,10 +881,12 @@ var List = React.createClass({
 				var row = (
 					<View style={styles.row}>
 						<Item url={Model[i].url}
+							  key={Model[i].id}
 							  title={Model[i].title}
 							  press={this.press.bind(this,Model[i])}>
 						</Item>
 						<Item url={Model[parseInt(i)+1].url}
+							  key={Model[parseInt(i)+1].id}
 							  title={Model[parseInt(i)+1].title}
 							  press={this.press.bind(this,Model[parseInt(i)+1])}>
 						</Item>

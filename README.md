@@ -1,5 +1,13 @@
 # React-Native-demo
 
+##1. 使用方法(mac上)
+1. 打开终端
+2. git clone https://github.com/hukezhu/React-Native-demo.git
+3. 下载完毕之后,通过终端进入React-Native-demo文件夹下面
+4. react-native run-ios
+
+
+##2.简介
 开始学习React-Native,最开始在网上看一些教程,按照教程搭建环境.后来买了一本书,看了一些了,还是想完整的学习一下,将书中的项目以及一些小的demo敲一下.
 
 FaceBook官方地址:http://facebook.github.io/react-native/
